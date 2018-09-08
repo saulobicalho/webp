@@ -40,7 +40,6 @@ export class NegociacaoController {
     @bindEvent('submit', '.form')
     @debounce()
     async adiciona(event) {
-        alert('oi');
 
         try {
             const negociacao = this._criaNegociacao();
