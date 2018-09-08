@@ -3,6 +3,11 @@ const babiliPlugin = require('babili-webpack-plugin');
   let plugins : any[]
 let plugins = [];
 
+if(process.env.NODE_ENV == 'production'){
+
+  plugins.push(new babiliPlugin());
+}
+
 module.exports = {
   entry: './app-src/app.js',
   output: {
