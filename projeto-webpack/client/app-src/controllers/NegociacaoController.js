@@ -8,7 +8,7 @@ export class NegociacaoController {
     constructor(_inputData, _inputQuantidade, _inputValor) {
 
         Object.assign(this, { _inputData, _inputQuantidade, _inputValor })
-        
+
         this._negociacoes = new Bind(
             new Negociacoes(),
             new NegociacoesView('#negociacoes'),
@@ -40,6 +40,7 @@ export class NegociacaoController {
     @bindEvent('submit', '.form')
     @debounce()
     async adiciona(event) {
+        alert('oi');
 
         try {
             const negociacao = this._criaNegociacao();
