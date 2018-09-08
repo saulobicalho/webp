@@ -12,7 +12,7 @@ export class NegociacaoService {
     obtemNegociacoesDaSemana() {
 
         return this._http
-            .get('negociacoes/semana')
+            .get('http://localhost:3000/negociacoes/semana')
             .then(
             dados =>
                 dados.map(objeto =>
