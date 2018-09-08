@@ -1,4 +1,5 @@
 const path = require('path');
+const babiliPlugin = require('babili-webpack-plugin');
 
 module.exports = {
   entry: './app-src/app.js',
