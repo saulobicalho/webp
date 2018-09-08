@@ -1,6 +1,5 @@
 const path = require('path');
 const babiliPlugin = require('babili-webpack-plugin');
-  let plugins : any[]
 let plugins = [];
 
 if(process.env.NODE_ENV == 'production'){
