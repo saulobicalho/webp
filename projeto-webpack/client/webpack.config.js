@@ -1,5 +1,7 @@
 const path = require('path');
 const babiliPlugin = require('babili-webpack-plugin');
+const extractTexPlugin = require('extract-text-webpack-plugin');
+
 let plugins = [];
 
 if(process.env.NODE_ENV == 'production'){
@@ -45,7 +47,7 @@ module.exports = {
      {
          test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
          loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
-     }                        
+     }
     ]
   },
   plugins
