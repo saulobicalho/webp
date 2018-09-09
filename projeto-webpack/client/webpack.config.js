@@ -4,6 +4,8 @@ const extractTexPlugin = require('extract-text-webpack-plugin');
 
 let plugins = [];
 
+plugins.push(new extractTexPlugin('styles.css'))
+
 if(process.env.NODE_ENV == 'production'){
 
   plugins.push(new babiliPlugin());
