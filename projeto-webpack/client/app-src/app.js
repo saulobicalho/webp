@@ -6,6 +6,7 @@ import 'jquery/dist/jquery.js'
 import 'bootstrap/js/modal.js';
 import '../css/meucss.css';
 
+$('h1').click(() => alert('voce me clicou'));
 const controller = new NegociacaoController();
 const negociacao = new Negociacao(new Date(), 1, 200);
 const headers = new Headers();
