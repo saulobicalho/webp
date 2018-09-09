@@ -14,7 +14,11 @@ plugins.push(new webpack.ProvidePlugin({
   'jQuery':'jquery/dist/jquery.js'
 }));
 
-plugins.push(new webpack.optimize.CommonsChunkPlugin())
+plugins.push(new webpack.optimize.CommonsChunkPlugin({
+
+  name: 'vendor',
+  filename: 'vendor.bundle.js'
+}));
 
 if(process.env.NODE_ENV == 'production'){
 
