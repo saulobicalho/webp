@@ -39,7 +39,7 @@ if(process.env.NODE_ENV == 'production'){
 module.exports = {
   entry: {
     app:'./app-src/app.js',
-    vendor: ['bootstrap','jquery','reflect-metadata']
+    vendor: ['jquery','bootstrap','reflect-metadata']
   },
   output: {
     filename: 'bundle.js',
