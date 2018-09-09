@@ -10,6 +10,15 @@ plugins.push(new extractTexPlugin('styles.css'))
 if(process.env.NODE_ENV == 'production'){
 
   plugins.push(new babiliPlugin());
+
+  plugins.push(new optimizeCSSAssetsPlugin({
+    cssProcessor: require('cssnano');
+    cssProcessorOptions:{
+      discartComments: {
+        removeAll: true;
+      }
+    }
+  }));
 }
 
 module.exports = {
