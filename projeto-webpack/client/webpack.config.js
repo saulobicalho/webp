@@ -17,7 +17,8 @@ if(process.env.NODE_ENV == 'production'){
       discartComments: {
         removeAll: true;
       }
-    }
+    },
+    canPrint: true
   }));
 }
 
