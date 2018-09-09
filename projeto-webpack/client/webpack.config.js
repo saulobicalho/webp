@@ -15,7 +15,7 @@ if(process.env.NODE_ENV == 'production'){
     cssProcessor: require('cssnano'),
     cssProcessorOptions:{
       discartComments: {
-        removeAll: true;
+        removeAll: true
       }
     },
     canPrint: true
