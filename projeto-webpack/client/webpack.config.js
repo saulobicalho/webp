@@ -14,7 +14,7 @@ if(process.env.NODE_ENV == 'production'){
   plugins.push(new optimizeCSSAssetsPlugin({
     cssProcessor: require('cssnano'),
     cssProcessorOptions:{
-      discartComments: {
+      discardComments: {
         removeAll: true
       }
     },
