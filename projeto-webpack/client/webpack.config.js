@@ -14,6 +14,8 @@ plugins.push(new webpack.ProvidePlugin({
   'jQuery':'jquery/dist/jquery.js'
 }));
 
+plugins.push(new webpack.optimize.CommonsChunkPlugin())
+
 if(process.env.NODE_ENV == 'production'){
 
   plugins.push(new webpack.optimize.ModuleConcatenationPlugin());
