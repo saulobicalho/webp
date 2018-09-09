@@ -9,7 +9,7 @@ let plugins = [];
 
 plugins.push(new extractTexPlugin('styles.css'))
 
-plugins.push(new webpack.ProvidedPlugin({
+plugins.push(new webpack.ProvidePlugin({
   '$': 'jquery/dist/jquery.js',
   'jQuery':'jquery/dist/jquery.js'
 }));
