@@ -21,8 +21,6 @@ export class NegociacaoController {
             'texto'
         );
 
-        this._service = new NegociacaoService();
-
         this._init();
     }
 
