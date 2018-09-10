@@ -34,6 +34,7 @@ plugins.push(new webpack.optimize.CommonsChunkPlugin({
 let SERVICE_URL = 'http://localhost:3000';
 if(process.env.NODE_ENV == 'production'){
 
+  SERVICE_URL = 'http://endereco';
   plugins.push(new webpack.optimize.ModuleConcatenationPlugin());
   plugins.push(new babiliPlugin());
 
