@@ -7,6 +7,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 let plugins = [];
 
+plugins.push(new HtmlWebpackPlugin({
+
+  hash: true,
+  minify: {
+    html5: true,
+    collapseWhitespace: true,
+    removeComments: true
+  },
+  filename: 'index.html',
+  template: __dirname + '/main.html'
+}));
 plugins.push(new extractTexPlugin('styles.css'))
 
 plugins.push(new webpack.ProvidePlugin({
