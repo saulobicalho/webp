@@ -49,6 +49,8 @@ if(process.env.NODE_ENV == 'production'){
   }));
 }
 
+plugins.push(new webpack.DefinePlugin({SERVICE_URL}));
+
 module.exports = {
   entry: {
     app:'./app-src/app.js',
